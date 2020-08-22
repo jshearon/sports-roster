@@ -21,7 +21,7 @@ class Team extends React.Component {
     return (
       <div className="Team">
         <h2 className="userName">{this.props.userInfo.name}'s Team Lineup</h2>
-        <div className="w-100 d-flex justify-content-around flex-wrap">
+        <div className="cardStack mx-auto d-flex justify-content-center flex-wrap">
           {playerCards}
         </div>
       </div>

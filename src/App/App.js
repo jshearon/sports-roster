@@ -7,6 +7,7 @@ import './App.scss';
 
 import Navbar from '../Components/Navbar/Navbar';
 import Team from '../Components/Team/Team';
+import AddPlayer from '../Components/AddPlayer/AddPlayer';
 import authData from '../helpers/data/authData';
 
 fbConnection();
@@ -15,6 +16,7 @@ class App extends React.Component {
   state = {
     authed: false,
     authInfo: {},
+    displayForm: false,
   }
 
   componentDidMount() {
@@ -29,12 +31,22 @@ class App extends React.Component {
     this.listener();
   }
 
+  showAddForm() {
+    this.setState({ displayForm: true });
+  }
+
   render() {
-    const { authed, userInfo } = this.state;
+    const { authed, userInfo, displayForm } = this.state;
 
     const displayContent = () => {
       if (authed) {
-        return <Team authed={authed} userInfo={userInfo} />;
+        if (!displayForm) {
+          return <div className="content">
+            <button className="addPlayerButton btn btn-primary float-right m-3" onClick={() => this.showAddForm()}>Add A Player</button>
+            <Team authed={authed} userInfo={userInfo} />
+          </div>;
+        }
+        return <AddPlayer />;
       }
       return 'Please log in to view and change your roster';
     };
