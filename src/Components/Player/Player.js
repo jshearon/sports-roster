@@ -8,6 +8,7 @@ class Player extends React.Component {
         <div className="card-header"><h5>TEAM NAME</h5></div>
         <div className="card-body">
           <img src={player.imageUrl} alt={player.name} />
+          <div className="player-position">{player.position}</div>
         </div>
         <div className="card-footer">{player.name}</div>
       </div>

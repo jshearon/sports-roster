@@ -31,11 +31,11 @@ class App extends React.Component {
     this.listener();
   }
 
-  showAddForm() {
+  showAddForm = () => {
     this.setState({ displayForm: true });
   }
 
-  processForm(e) {
+  processForm = (e) => {
     e.preventDefault();
     console.error(e);
   }
@@ -47,7 +47,7 @@ class App extends React.Component {
       if (authed) {
         if (!displayForm) {
           return <div className="content">
-            <button className="addPlayerButton btn btn-primary float-right m-3" onClick={() => this.showAddForm()}>Add A Player</button>
+            <button className="addPlayerButton btn btn-primary float-right m-3" onClick={this.showAddForm}>Add A Player</button>
             <Team authed={authed} userInfo={userInfo} />
           </div>;
         }
