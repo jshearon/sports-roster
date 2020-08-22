@@ -6,17 +6,22 @@ import fbConnection from '../helpers/data/connection';
 import './App.scss';
 
 import Navbar from '../Components/Navbar/Navbar';
+import Team from '../Components/Team/Team';
+import authData from '../helpers/data/authData';
 
 fbConnection();
 
 class App extends React.Component {
   state = {
     authed: false,
+    authInfo: {},
   }
 
   componentDidMount() {
     this.listener = firebase.auth().onAuthStateChanged((user) => {
-      user ? this.setState({ authed: true }) : this.setState({ authed: false });
+      user
+        ? this.setState({ authed: true, userInfo: authData.userInfo() })
+        : this.setState({ authed: false });
     });
   }
 
@@ -25,11 +30,11 @@ class App extends React.Component {
   }
 
   render() {
-    const { authed } = this.state;
+    const { authed, userInfo } = this.state;
 
     const displayContent = () => {
       if (authed) {
-        return <div className="noLoginMessage">no content yet</div>;
+        return <Team authed={authed} userInfo={userInfo} />;
       }
       return 'Please log in to view and change your roster';
     };
