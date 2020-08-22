@@ -35,6 +35,11 @@ class App extends React.Component {
     this.setState({ displayForm: true });
   }
 
+  processForm(e) {
+    e.preventDefault();
+    console.error(e);
+  }
+
   render() {
     const { authed, userInfo, displayForm } = this.state;
 
@@ -46,7 +51,7 @@ class App extends React.Component {
             <Team authed={authed} userInfo={userInfo} />
           </div>;
         }
-        return <AddPlayer />;
+        return <AddPlayer processForm={this.processForm} />;
       }
       return 'Please log in to view and change your roster';
     };
