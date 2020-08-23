@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Brannboll";
+  src: url('../../Assets/Fonts/BrannbollFPersonalUseOnly-8wvz.woff2') format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: Brannboll;
+  font-size: 5rem;
+}
