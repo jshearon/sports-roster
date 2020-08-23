@@ -5,7 +5,11 @@
   font-style: normal;
 }
 
-.navbar-brand {
-  font-family: Brannboll;
-  font-size: 5rem;
+nav {
+  background: transparent;
+  h1 {
+    font-family: Brannboll;
+    font-size: 5rem;
+    color: #565656;
+  }
 }
