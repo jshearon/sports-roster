@@ -12,7 +12,10 @@ const getPlayersByTeam = (uid) => new Promise((resolve, reject) => {
 
 const getPlayer = (playerId) => axios.get(`${baseUrl}/players/${playerId}.json`);
 
+const deletePlayer = (playerId) => axios.delete(`${baseUrl}/players/${playerId}.json`);
+
 export default {
   getPlayersByTeam,
   getPlayer,
+  deletePlayer,
 };

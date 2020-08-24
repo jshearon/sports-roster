@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Ristella";
+  src: url('../../Assets/Fonts/Ristella.woff2') format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  background: #041E42;
+  h1 {
+    font-family: Ristella;
+    font-style: italic;
+    font-size: 5rem;
+    color: goldenrod;
+  }
+}
