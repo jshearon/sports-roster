@@ -1,7 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Player.scss';
+import playerShape from '../../helpers/propz/playerShape';
 
 class Player extends React.Component {
+  static propTypes = {
+    player: playerShape.playerShape,
+    deletePlayer: PropTypes.func.isRequired,
+  }
+
   removePlayerEvent = (e) => {
     e.preventDefault();
     const { player, deletePlayer } = this.props;
