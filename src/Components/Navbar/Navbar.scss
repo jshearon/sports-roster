@@ -1,15 +1,16 @@
 @font-face {
-  font-family: "Brannboll";
-  src: url('../../Assets/Fonts/BrannbollFPersonalUseOnly-8wvz.woff2') format("woff2"); /* Modern Browsers */
+  font-family: "Ristella";
+  src: url('../../Assets/Fonts/Ristella.woff2') format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 nav {
-  background: transparent;
+  background: #041E42;
   h1 {
-    font-family: Brannboll;
+    font-family: Ristella;
+    font-style: italic;
     font-size: 5rem;
-    color: #565656;
+    color: goldenrod;
   }
 }

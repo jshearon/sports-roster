@@ -8,7 +8,7 @@ class Navbar extends React.Component {
     const { authed } = this.props;
     return (
       <nav className="navbar navbar-light">
-        <h1>Sports Roster9</h1>
+        <h1>Sports Roster</h1>
         <Auth authed={authed} />
       </nav>
     );
