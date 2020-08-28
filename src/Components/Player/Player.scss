@@ -41,6 +41,7 @@ $palette5: #FDF544, #DE321F, #549DD9, #FFF761;
     border: .5vw solid whitesmoke; 
     border-radius: 1vw; 
     width: 100%;
+    height: 25vw; 
   }
 }
 
@@ -114,6 +115,9 @@ $palette5: #FDF544, #DE321F, #549DD9, #FFF761;
   .deletePlayer {
     opacity: 100%;
   }
+  .editPlayer {
+    opacity: 100%;
+  }
 }
 
 .player-position {
@@ -161,6 +165,20 @@ $palette5: #FDF544, #DE321F, #549DD9, #FFF761;
   left: 50%;
   bottom: -2.3vw;
   width: 50%;
+  transition: 1s;
+  font-size: .8vw;
+  font-family: NimbusSans;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.editPlayer {
+  height: 2.2vw;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -2.3vw;
+  width: 49%;
   transition: 1s;
   font-size: .8vw;
   font-family: NimbusSans;

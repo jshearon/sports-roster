@@ -1,70 +1,70 @@
 {
   "players" : {
     "player1" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/501625@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/501625@2x.jpg",
       "name" : "José Álvarez",
       "position" : "Pitcher",
       "teamname" : "Phillies",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player10" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/642232@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/642232@2x.jpg",
       "name" : "Ryan Yarbrough",
       "position" : "Pitcher",
       "teamname" : "Rays",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player2" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/624413@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/624413@2x.jpg",
       "name" : "Pete Alonso",
       "position" : "1st",
       "teamname" : "Mets",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player3" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/664034@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/664034@2x.jpg",
       "name" : "Ty France",
       "position" : "3rd",
       "teamname" : "Padres",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player4" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/500871@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/500871@2x.jpg",
       "name" : "Eduardo Escobar",
       "position" : "3rd",
       "teamname" : "Rays",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player5" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/676480@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/676480@2x.jpg",
       "name" : "Jose Garcia",
       "position" : "SS",
       "teamname" : "Marlins",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player6" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/543305@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/543305@2x.jpg",
       "name" : "Aaron Hicks",
       "position" : "CF",
       "teamname" : "Yankees",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player7" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/663411@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/663411@2x.jpg",
       "name" : "Joe McCarthy",
       "position" : "LF",
       "teamname" : "Giants",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player8" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/533167@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/533167@2x.jpg",
       "name" : "Matt Shoemaker",
       "position" : "Pitcher",
       "teamname" : "Blue Jays",
       "uid" : "N9EVmbYDH7gkCjd26RrxefRysNy1"
     },
     "player9" : {
-      "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/649963@2x.jpg",
+      "imgUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/649963@2x.jpg",
       "name" : "Bo Takahashi",
       "position" : "Pitcher",
       "teamname" : "Diamondbacks",
