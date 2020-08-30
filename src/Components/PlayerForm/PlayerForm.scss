@@ -1,7 +1,55 @@
-.addPlayerForm {
-  padding: 5vw;
+.playerForm {
+  position: absolute;
+  top: .9vw;
+  left: 45.9%;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 20vw;
+  padding: 2vw;
+  overflow: hidden;
+  background-color: #047BFF;
+  border-radius: 5px;
+  transform-origin: 0 0;
+}
+
+.slideForm-enter,
+.slideForm-appear {
+  top: .9vw;
+  width: 8vw;
+  max-height: 0;
+  color: transparent;
+  background-color: #047BFF;
+}
+
+.slideForm-enter-active,
+.slideForm-appear-active {
+  top: 4vw;
+  width: 20vw;
+  max-height: 40vw;
+  background-color: #041E42;
+  transition: all 400ms ease-in;
+}
+
+.slideForm-enter-done{
+  top: 4vw;
+  width: 20vw;
+  max-height: 40vw;
   color: white;
-  border: 4px solid black;
-  border-radius: 5%;
-  background-color: rgba(201, 76, 76, 0.5);
+  background-color: #041E42;
+}
+
+.slideForm-exit {
+  top: 4vw;
+  width: 20vw;
+  max-height: 40vw;
+  background-color: #041E42;
+}
+
+.slideForm-exit-active {
+  top: .9vw;
+  width: 8vw;
+  max-height: 0;
+  color: transparent;
+  background-color: #047BFF;
+  transition: all 400ms ease-in;
 }

@@ -38,7 +38,7 @@ class AddPlayer extends React.Component {
   render() {
     // const { processForm } = this.props;
     return (
-      <form className="addPlayerForm">
+      <form className="playerForm">
         <div className="form-group">
           <label htmlFor="name">Player Name</label>
           <input
