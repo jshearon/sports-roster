@@ -4,7 +4,7 @@ const playerShape = PropTypes.shape({
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
   teamname: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string.isRequired,
   uid: PropTypes.string.isRequired,
 });
 

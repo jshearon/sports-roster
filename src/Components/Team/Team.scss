@@ -1,4 +1,12 @@
+.Team {
+  position: relative;
+}
+
 .cardStack {
   width: 50vw;
   transform: translateX(-10%) translateY(-5%);
+}
+
+.addPlayerButton {
+  width: 8vw;
 }
