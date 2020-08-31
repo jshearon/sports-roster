@@ -44,18 +44,20 @@ class Team extends React.Component {
     playersData.updatePlayer(playerId, editedPlayer)
       .then(() => {
         this.getPlayers();
-        this.setState({ displayForm: false });
+        this.setState({ editPlayerObject: {}, displayForm: false });
       })
       .catch((err) => console.error(err));
   }
 
   populateEditForm = (editPlayerObject) => {
-    this.setState({ editPlayerObject });
-    this.setState({ displayForm: !this.state.displayForm });
+    this.setState({ editPlayerObject, displayForm: true });
   }
 
   showAddForm = (e) => {
-    this.setState({ displayForm: !this.state.displayForm });
+    const { displayForm } = this.state;
+    displayForm
+      ? this.setState({ editPlayerObject: {}, displayForm: !displayForm })
+      : this.setState({ displayForm: !displayForm });
   }
 
   render() {
