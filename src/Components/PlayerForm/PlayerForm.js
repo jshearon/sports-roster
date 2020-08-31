@@ -2,13 +2,28 @@ import React from 'react';
 // eslint-disable-next-line import/no-unresolved
 import './PlayerForm.scss';
 
-class AddPlayer extends React.Component {
+class PlayerForm extends React.Component {
   state = {
     name: '',
     imgUrl: '',
     position: '',
     teamname: '',
+    playerId: '',
     editing: false,
+  }
+
+  componentDidMount() {
+    const { editedPlayer } = this.props;
+    if (editedPlayer.name) {
+      this.setState({
+        name: editedPlayer.name,
+        imgUrl: editedPlayer.imgUrl,
+        position: editedPlayer.position,
+        teamname: editedPlayer.teamname,
+        playerId: editedPlayer.id,
+        editing: true,
+      });
+    }
   }
 
   stateListener = (e) => {
@@ -35,8 +50,34 @@ class AddPlayer extends React.Component {
     addPlayer(newPlayer);
   }
 
+  editPlayerEvent = (e) => {
+    e.preventDefault();
+    const {
+      name,
+      imgUrl,
+      position,
+      teamname,
+      playerId,
+    } = this.state;
+    const { editPlayer } = this.props;
+    const editedPlayer = {
+      name,
+      imgUrl,
+      position,
+      teamname,
+    };
+    editPlayer(playerId, editedPlayer);
+  }
+
   render() {
-    // const { processForm } = this.props;
+    const {
+      name,
+      imgUrl,
+      position,
+      teamname,
+      editing,
+    } = this.state;
+
     return (
       <form className="playerForm">
         <div className="form-group">
@@ -46,6 +87,7 @@ class AddPlayer extends React.Component {
             className="form-control"
             id="name"
             onChange={this.stateListener}
+            value={name}
           />
         </div>
         <div className="form-group">
@@ -55,6 +97,7 @@ class AddPlayer extends React.Component {
             className="form-control"
             id="imgUrl"
             onChange={this.stateListener}
+            value={imgUrl}
           />
         </div>
         <div className="form-group">
@@ -64,6 +107,7 @@ class AddPlayer extends React.Component {
             className="form-control"
             id="position"
             onChange={this.stateListener}
+            value={position}
           />
         </div>
         <div className="form-group">
@@ -73,12 +117,17 @@ class AddPlayer extends React.Component {
             className="form-control"
             id="teamname"
             onChange={this.stateListener}
+            value={teamname}
           />
         </div>
-        <button type="submit" className="btn btn-primary" onClick={this.newPlayerEvent}>Submit</button>
+        {
+          editing
+            ? <button type="submit" className="btn btn-primary" onClick={this.editPlayerEvent}>Update</button>
+            : <button type="submit" className="btn btn-primary" onClick={this.newPlayerEvent}>Submit</button>
+        }
       </form>
     );
   }
 }
 
-export default AddPlayer;
+export default PlayerForm;
