@@ -17,6 +17,8 @@ class Player extends React.Component {
 
   editPlayerEvent = (e) => {
     e.preventDefault();
+    const { player, populateEditForm } = this.props;
+    populateEditForm(player);
   }
 
   render() {
