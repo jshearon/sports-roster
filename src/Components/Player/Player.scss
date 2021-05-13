@@ -113,10 +113,10 @@ $palette5: #FDF544, #DE321F, #549DD9, #FFF761;
   transform: rotateX(0deg) rotateZ(0deg);
   z-index: 2;
   .deletePlayer {
-    opacity: 100%;
+    opacity: 1;
   }
   .editPlayer {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -127,7 +127,7 @@ $palette5: #FDF544, #DE321F, #549DD9, #FFF761;
   width: 5vw;
   height: 5vw;
   line-height: 5vw;
-  font-size: 1vw;
+  font-size: .8vw;
   position: absolute;
   right: 1vw;
   bottom: 1vw; 
